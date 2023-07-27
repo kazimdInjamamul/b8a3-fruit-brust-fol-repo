@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+
+    </script>
+
+    <style>
+        .lota {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav
+            class=" rounded-full my-10  max-w-screen-xl mx-60 flex items-center justify-between bg-[#F85559] px-16 py-4">
+            <!-- Left section: Logo or brand -->
+            <ul class="flex items-center p-12 gap-7">
+                <li>
+                    <div class="">
+                        <!-- Add your logo or brand here -->
+                        <span class="text-white text-lg font-bold">Home</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <!-- Add your logo or brand here -->
+                        <span class="text-white text-lg font-bold">About Us</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <!-- Add your logo or brand here -->
+                        <span class="text-white text-lg font-bold">Shop</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <!-- Add your logo or brand here -->
+                        <span class="text-white text-lg font-bold">All Fruits</span>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <!-- Middle section: Centered text (Navigation title) -->
+            <div class="text-white  text-4xl font-bold">Fruit Burst</div>
+
+            <!-- Right section: Search bar -->
+            <div class="flex items-center bg-white">
+                <div class="join">
+                    <input
+                        class="input input-bordered join-item text-black bg-white px-4 py-2 rounded-full focus:outline-none"
+                        type="text" placeholder="Search here" />
+                    <img src="" alt="">
+                    <span class=" join-item inline-grid relative m-5 rounded-full cursor-pointer items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+ 
+        <!-- hadder -->
+        
+        <div class="carousel max-w-screen-xl mx-60 ">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="/images/banner1.png" class="w-full " />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="justify-center text-center  ">
+                        <h2 class="-mt-56 font-extrabold text-7xl  text-white text-center">Exotic tastes at your
+                            <br> doorstep
+                        </h2>
+                        <p class=" mt-6 text-sm text-center text-white ">We supply highly quality organic products</p>
+                        <button class=" mt-8 mx-96 px-6 py-4 btn btn-error ">Shop Now</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="/images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <!-- Grape -->
+        <section class="max-w-screen-xl h-60 mx-60 -mt-20 drop-shadow-lg bg-white">
+            <div class="flex justify-around pt-10">
+                <div class=" items-center">
+                    <img class="" src="images/fruit1.png" alt="">
+                    <h3>Grape</h3>
+                </div>
+                <div><img class="" src="images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div><img class="" src="images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div><img class="" src="images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div><img class="" src="images/fruit5.png" alt="">
+                    <p>pomegranate</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Deal of the day -->
+        <section>
+            <div class="mx-56 flex justify-center gap-96  mt-32 ">
+                <div>
+                    <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                    <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical Latin <br>
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:55;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+            <div class="flex gap-6 mx-60">
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pb-8 ">
+                            12.90$ - 18.85$
+
+
+                        </h2>
+                        class="badge badge-outline "
+                        <p class="justify-center">Apples</p>
+                        <div class="card-actions justify-center">
+                            <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn max-w-screen-md min-h-full" onclick="my_modal_5.showModal()">open modal</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                    <form method="dialog" class="modal-box">
+                                        <img class="w-80 h-80 " src="images/fruit6.png" alt="">
+                                        <h3 class="font-bold text-lg justify-center items-center">Banana</h3>
+                                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="modal-action justify-center">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close</button>
+                                            <button class="btn">Close</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit9.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+</body>
+
+</html>
